@@ -264,8 +264,8 @@ class MainShowChatRecords(BaseSubMainClass):
                             metavar="")
         parser.add_argument("-myid", "--my_wxid", type=str, help="(可选)微信账号(本人微信id)", required=False,
                             default="", metavar="")
-        parser.add_argument("--online", action='store_true', help="(可选)是否在线查看(局域网查看)", required=False,
-                            default=False)
+        parser.add_argument("--online", action='store_true', help="(可选)是否在线查看(局域网查看)", required=True,
+                            default=True)
         # parser.add_argument("-k", "--key", type=str, help="(可选)密钥", required=False, metavar="")
         return parser
 
